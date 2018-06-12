@@ -45,7 +45,7 @@ If this isn't an option rely on ARIA techniques instead.
 Include a unique title for each page.
 
 ```html
-<title>Nerdery Primer: Responsive Design - Blog - The Nerdery</title>
+<title>Logikcull: My Projects</title>
 ```
 
 ## ARIA Roles
@@ -56,12 +56,12 @@ Use landmark ARIA roles on all projects.
 
 The landmark ARIA roles include:
 
-* **banner** - wraps the typical site masthead. Use only once per page.
-* **search** - place on a form that performs search.
-* **navigation** - place on your navigation container (for in-document and site-wide navigation).
-* **main** - place on container that holds the main page content. Use only once per page.
-* **complementary** - place on containers that are akin to the `<aside>` HTML5 element.
-* **contentinfo** - place on element that contains meta information about the page or content, often the site footer. Use only once per page.
+- **banner** - wraps the typical site masthead. Use only once per page.
+- **search** - place on a form that performs search.
+- **navigation** - place on your navigation container (for in-document and site-wide navigation).
+- **main** - place on container that holds the main page content. Use only once per page.
+- **complementary** - place on containers that are akin to the `<aside>` HTML5 element.
+- **contentinfo** - place on element that contains meta information about the page or content, often the site footer. Use only once per page.
 
 When using HTML5 elements, like `<header>` and `<footer>`, provide progressive enhancement for screen readers by including ARIA landmark roles on these elements as well, even though some screen readers may see this as redundant.
 
@@ -113,8 +113,8 @@ If the project requirements allow, you may combine the use of landmark ARIA role
 
 **Resources**
 
-* <http://www.w3.org/1999/xhtml/vocab#XHTMLRoleVocabulary>
-* <http://www.paciellogroup.com/blog/2010/10/using-wai-aria-landmark-roles/>
+- <http://www.w3.org/1999/xhtml/vocab#XHTMLRoleVocabulary>
+- <http://www.paciellogroup.com/blog/2010/10/using-wai-aria-landmark-roles/>
 
 ## Skip Links
 
@@ -136,16 +136,16 @@ It's best practice to bring focusable into view when they are focused.
 
 ```css
 .isVisuallyHidden:not(:focus):not(:active) {
-    width: 1px !important;
-    height: 1px !important;
-    margin: -1px !important;
-    border: 0 !important;
-    padding: 0 !important;
-    clip-path: inset(100%) !important;
-    clip: rect(0 0 0 0) !important;
-    overflow: hidden !important;
-    position: absolute !important;
-    white-space: nowrap !important;
+  width: 1px !important;
+  height: 1px !important;
+  margin: -1px !important;
+  border: 0 !important;
+  padding: 0 !important;
+  clip-path: inset(100%) !important;
+  clip: rect(0 0 0 0) !important;
+  overflow: hidden !important;
+  position: absolute !important;
+  white-space: nowrap !important;
 }
 ```
 
@@ -284,8 +284,8 @@ Keep legend text short as it is read by screen readers before each input in the 
 <fieldset>
     <legend>Profession</legend>
     <label for="professionDoctor">Doctor <input type="radio" name="profession" id="professionDoctor" /></label>
-<label for="professionLawyer">Lawyer <input type="radio" name="profession" id="professionLawyer" /></label>
-<label for="professionOther">Other <input type="radio" name="profession" id="professionOther" /></label>
+    <label for="professionLawyer">Lawyer <input type="radio" name="profession" id="professionLawyer" /></label>
+    <label for="professionOther">Other <input type="radio" name="profession" id="professionOther" /></label>
 </fieldset>
 ```
 
@@ -324,10 +324,10 @@ If a field returns as invalid, it should include the `aria-invalid` attribute wi
 
 **Resources**
 
-* <http://alistapart.com/article/aria-and-progressive-enhancement>
-* <http://www.deque.com/blog/accessible-client-side-form-validation-html5-wai-aria/>
-* <https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute>
-* <http://webaim.org/techniques/formvalidation/>
+- <http://alistapart.com/article/aria-and-progressive-enhancement>
+- <http://www.deque.com/blog/accessible-client-side-form-validation-html5-wai-aria/>
+- <https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/ARIA_Techniques/Using_the_aria-invalid_attribute>
+- <http://webaim.org/techniques/formvalidation/>
 
 ## Hiding Content
 
@@ -343,21 +343,21 @@ If content is meant to be available to a screen reader but not to a sighted user
 
 ```css
 .isVisuallyHidden {
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    padding: 0;
-    border: 0;
-    position: absolute;
-    clip: rect(0 0 0 0);
-    overflow: hidden;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  position: absolute;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 ```
 
 **Resources**
 
-* <http://snook.ca/archives/html_and_css/hiding-content-for-accessibility>
-* <http://webaim.org/techniques/css/invisiblecontent/>
+- <http://snook.ca/archives/html_and_css/hiding-content-for-accessibility>
+- <http://webaim.org/techniques/css/invisiblecontent/>
 
 ## Focus Styles
 
@@ -365,7 +365,7 @@ Include `:focus` styles to ensure proper keyboard accessibility. Keep in mind, `
 
 **Resources**
 
-* <http://24ways.org/2009/dont-lose-your-focus>
+- <http://24ways.org/2009/dont-lose-your-focus>
 
 ## Tabindex
 
